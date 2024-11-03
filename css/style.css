@@ -341,7 +341,7 @@ img {
 /*================== start navbar section ==================*/
 @media (max-width: 990px) {
   .navbar {
-    background-color: #ffffff;
+    background-color: #131111;
   }
 
   .home-rtl .navbar #navbar {
