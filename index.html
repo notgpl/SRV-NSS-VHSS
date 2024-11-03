@@ -1,121 +1,282 @@
-<!DOCTYPE html>
+<DOCTYPE! html>
 <html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> <!-- Added for responsiveness -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.10-0/css/ionicons.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <title>S.R.V N.S.S V.H.S.S</title>
-</head>
+<!-- bootstarp css file -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
 
+<!-- aos.css file -->
+<link rel="stylesheet" href="css/aos.css">
+
+<!-- bootstrap icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Ionicons CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.10-0/css/ionicons.min.css">
+
+  <!-- Existing Bootstrap and jQuery scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+<!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- main css file -->
+  <link rel="stylesheet" href="css/style.css">
+<title>S.R.V N.S.S V.H.S.S</title>
+<script>
+        function animateTitle(textArray, interval) {
+            let currentIndex = 0;
+            setInterval(function() {
+                document.title = textArray[currentIndex];
+                currentIndex = (currentIndex + 1) % textArray.length;
+            }, interval);
+        }
+        
+        window.onload = function() {
+            
+            let titles = ["S", "S.", "S.R" , "S.R." , "S.R.V" , "S.R.V N " , " S.R.V N." , "S.R.V N.S" , "S.R.V N.S." , "S.R.V N.S.S", "S.R.V N.S.S V", "S.R.V N.S.S V.", "S.R.V N.S.S V.H", "S.R.V N.S.S V.H.", "S.R.V N.S.S V.H.S", "S.R.V N.S.S V.H.S.", "S.R.V N.S.S V.H.S.S"];
+            
+            animateTitle(titles, 1000);
+        };
+    </script>
+</head>
 <body class="home-1">
-  <!-- Start Header -->
+
+  <!-- ======= Start Header ======= -->
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="bi bi-list" id="menu"></i>
-      </button>
-      <div class="container">
-        <a class="navbar-brand" href="#">S.R.V N.S.S V.H.S.S</a>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list" id="menu"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+          <ul class="navbar-nav ms-auto" id="navbar">
+            <li class="nav-item dropdown">
           </ul>
-        </div>
-      </div>
+          
+          <div class="container">
+            <a class="header" href="#";>Home </a>
+            &nbsp;
+            &nbsp;
+            <a class="header" href="#">Register </a>
+            &nbsp;
+            &nbsp;
+            <a class="header" href="#">Contact </a>
+            &nbsp;
+            &nbsp;
+            <a class="header" href="#">About </a>
+            &nbsp;
+            &nbsp;
+            <a class="header" href="#">Portfolio </a>
+            &nbsp;
+            
+              <a href="https://www.facebook.com/SrvNssVhssChirikkadavu/"><i class="bi bi-facebook"></i></a>
+              &nbsp;
+              <a href="https://www.instagram.com/srv_nss_vhss_chirakkadavu"><i class="bi bi-instagram"></i></a>
+              &nbsp;
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              &nbsp;
+              <a href="#"><i class="bi bi-youtube"></i></a>
+            
+            
     </nav>
   </header>
-  <!-- End Header -->
+<!-- ======= End Header ======= -->
 
-  <!-- Start Hero Section -->
+  <!-- ============== Start Hero Section ========== -->
   <section class="hero d-flex flex-column justify-content-center align-items-center" id="hero">
+    <div id="particles-js"></div>
     <div class="container">
       <div class="row">
-        <div class="hero-text col-12 col-lg-5 text-center text-lg-start">
-          <h2 data-aos="fade-up" data-aos-delay="150">S.R.V <span class="unique-text">N.S.S V.H.S.S</span> Chirakkadavu</h2>
-          <p data-aos="fade-up" data-aos-delay="200">Building a foundation for lifelong success with quality education, values, and diverse opportunities.</p>
+        <div class="hero-text col-12 col-lg-5">
+          <div class="row">
+            <!-- Remove hero-icons div to remove icons, but keep other styling intact -->
+            <div class="col-12">
+              <h2 class="title col-12" data-aos="fade-up" data-aos-delay="150"> S.R.V <span
+                  class="unique-text">  N.S.S <div></div>V.H.S.S</span><div></div> Chirakkadavu</h2>
+            </div>
+            <div class="col-lg-10 col-12" data-aos="fade-up" data-aos-delay="200">
+              <p>
+                Building a foundation for lifelong success with quality education, values, and diverse opportunities.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-lg-7 text-center" data-aos="fade-left" data-aos-delay="100">
-          <img class="img-fluid" src="srvnsshsimg.jpg" alt="hero-img">
+        <div class="col-12 col-lg-7 mx-md-auto text-center" data-aos="fade-left" data-aos-delay="100">
+          <div class="hero-image">
+            <div class="hero-img" data-tilt>
+              <img class="img-fluid " alt="hero-img"
+                src="C:\Users\GodGpl\OneDrive\Desktop\Srv\srvnsshsimg.jpg">
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- End Hero Section -->
+</section>
 
-  <!-- Start Flash Section -->
+  <!-- ============== End Hero Section ========== -->
+  <!-- ============== Start Flash Section ========== -->
+   <section class="container services py-5" id="services">
+    <div class="heading">
+      <h2 class="title col-lg-10 col-12" style="margin-left: 15px;" data-aos="zoom-out-right" data-aos-delay="100">
+         Details
+      </h2>
+      <p class="col-lg-7 col-12" style="margin-left: 15px;" data-aos="zoom-out-right" data-aos-delay="200">
+        S.R.V.N.S.S. V.H.S.S (Sree Rama Vilasam Nair Service Society Vocational Higher Secondary School)was established in 1957 and it is managed by the Pvt. Aided. It is located in Rural area. It is located in KANJIRAPPALLY block of KOTTAYAM district of Kerala. The school consists of Grades from 8 to 12.
+      </p>
+    </div>
+    </div>
+  <!-- ============== End Flash Section ========== -->
+
+  <!-- ============== Start Services Section ========== -->
   <section class="container services py-5" id="services">
-    <div class="heading text-center">
-      <h2 class="title" data-aos="zoom-out-right">Details</h2>
-      <p data-aos="zoom-out-right">S.R.V.N.S.S. V.H.S.S is a rural school located in Kottayam district, offering classes from grade 8 to 12.</p>
+    <div class="heading">
+    </div>
+    </div>
+    <div class="row gy-4 gx-4 ">
+      <!-- service number 1 -->
+      <div class=" col-md-6 col-lg-4 mx-auto" data-aos="fade-down" data-aos-delay="300">
+        <!-- service number 5 -->
+        <div class="box  box-service box-hover">
+          <div class="box-icon my-2">
+          <i class="bi bi-journal-bookmark"></i>
+          </div>
+          <h2 class="title-2 my-2 "> 8,9,10 | 11,12<div></div>classes</h2> 
+    </div>
+    </div>
+    <div class=" col-md-6 col-lg-4 mx-auto" data-aos="fade-down" data-aos-delay="300">
+        <!-- service number 5 -->
+        <div class="box  box-service box-hover">
+          <div class="box-icon my-2">
+            <i class="bi bi-geo-alt"></i>
+          </div>
+          <h2 class="title-2 my-2">Thekkethukavala PO Chirakkadavu,<div></div>Kottayam</h2>
+    </div>
+    </div>
+    <div class=" col-md-6 col-lg-4 mx-auto" data-aos="fade-down" data-aos-delay="300">
+        <!-- service number 5 -->
+        <div class="box  box-service box-hover">
+          <div class="box-icon my-2">
+            <i class="bi bi-bus-front"></i>
+          </div>
+          <h2 class="title-2 my-2 ">School Bus<div></div> Available</h2>
+
+      </div>
     </div>
   </section>
-  <!-- End Flash Section -->
+  <!-- ============== End Services Section ========== -->
+  <!-- ============== Start Clips Section ========== -->
+  <div class="heading">
+  <h1 class="title col-12" style="margin-left: 15px;" data-aos="fade-up" data-aos-delay="100">
+    Management
+    <h2 class="title-2 col-lg-10 col-12" style="margin-left: 15px;" data-aos="zoom-in" data-aos-delay="100">S.R.V N.S.S Karayogam<div></div>No:714</h2>
+    <div class="hero-text col-12 col-lg-5 d-flex align-items-center">
+      <img src="C:\Users\GodGpl\OneDrive\Desktop\Srv\srvnsshsimg.jpg" alt="SRV-NSS-Img" style="height: 310px; width: 435px; margin-left: 0px;" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-12" data-aos="zoom-in-left" data-aos-delay="250">
+        </div>
+    </div>&nbsp</div> 
+  
 
-  <!-- Start Services Section -->
-  <section class="container services py-5" id="services">
-    <div class="row gy-4">
-      <div class="col-md-4 text-center" data-aos="fade-down" data-aos-delay="300">
-        <div class="box box-service box-hover">
-          <i class="bi bi-journal-bookmark my-2"></i>
-          <h2>Classes 8-12</h2>
-        </div>
-      </div>
-      <div class="col-md-4 text-center" data-aos="fade-down" data-aos-delay="300">
-        <div class="box box-service box-hover">
-          <i class="bi bi-geo-alt my-2"></i>
-          <h2>Thekkethukavala PO Chirakkadavu, Kottayam</h2>
-        </div>
-      </div>
-      <div class="col-md-4 text-center" data-aos="fade-down" data-aos-delay="300">
-        <div class="box box-service box-hover">
-          <i class="bi bi-bus-front my-2"></i>
-          <h2>School Bus Available</h2>
-        </div>
+  <!-- ============== Start About Section ========== -->
+    </div>
+    <div class="heading">
+  <h2 class="title col-12" data-aos="fade-up" data-aos-delay="100" style="margin-left: 15px;">
+     Admission
+  </h2>
+  <p class="col-lg-7 col-12" data-aos="fade-up" data-aos-delay="150">
+  </p>
+</div>
+<div class="row gy-4 gx-4">
+  <div class="col-lg-3 col-md-6 col-12 mx-auto" data-aos="fade-right" data-aos-delay="200">
+    <div class="rectangle">
+    </div>
+  </div>
+  <div class="col-lg-12 col-md-6 col-12 mx-auto" data-aos="fade-up" data-aos-delay="250">
+        <h2 class="title-2 my-2" style="margin-left: 15px;">For Admission and others please visit the Contact Page by clicking the "Contact" option </h2>
+        <a href="" class="btn" style="margin-left: 15px;">Contact</a>
       </div>
     </div>
-  </section>
-  <!-- End Services Section -->
+  </div>
+</div>
+  <!-- ============== End About Section ========== -->
 
-  <!-- Start Contact Section -->
+  <!-- ============== Start Contact Section ========== -->
   <section class="container contact py-5" id="contact">
-    <div class="heading text-center">
-      <h2 class="title" data-aos="fade-up">About The School</h2>
-      <p data-aos="fade-up">The school is managed by SRV NSS Karayogam No:714. Situated in Kottayam district, it offers a library and sports facilities. Visit our contact page for more information.</p>
+    <div class="heading ">
+      <h2 class="title col-12" data-aos="fade-up" data-aos-delay="100">
+        About The School
+      </h2>
+      <p class="col-lg-7 col-12" data-aos="fade-up" data-aos-delay="150">
+        The School is managed by the SRV NSS Karayogam No:714 Group. The School is situated in Kottayam District at a place called Chirakkadavu. The school consists of two school bus in total. The School got one Library consists of many books contains both the English and Malayalam Literature to spread the knowledge by reading and also there is a football ground and a basketball court nearby it  (images are given below). For any other kinds of information or enquiries please visit the Contact page..
+      </p>
+      <img src="C:\Users\GodGpl\OneDrive\Desktop\Srv\srvnsshsimg.jpg" alt="School Library" style="width: 435px; height: 310px; margin-bottom: 0px; margin-left:0px;">&nbsp
+      <img src="C:\Users\GodGpl\OneDrive\Desktop\Srv\srvnsshsimg.jpg" alt="Ground" style="width: 435px; height: 310px; margin-top: 0px;">
     </div>
-  </section>
-  <!-- End Contact Section -->
+    <div class="row  gx-4 ">
+      <div class="col-12 col-lg-6 gy-3">
+        <h2 class="title-2 " data-aos="fade-right" data-aos-delay="200">
+          
+        </h2>
+        <div class="info d-flex my-4 " data-aos="fade-right" data-aos-delay="250">
+        <div>
+       <div>
+    </div>
+    <div>
+        </div>
+      </div>
+      </div>
+          </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
-  <!-- Start Footer Section -->
+  <!-- ============== End Contact Section ========== -->
+
+  <!-- ============== Start Footer Section ========== -->
   <div class="footer-basic">
     <footer>
-      <div class="social"><a href="https://www.facebook.com/SrvNssVhssChirikkadavu/"><i class="bi bi-facebook"></i></a><a href="https://www.instagram.com/srv_nss_vhss_chirakkadavu"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-linkedin"></i></a><a href="#"><i class="bi bi-youtube"></i></a></div>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="#">Home</a></li>
-        <li class="list-inline-item"><a href="#">Register</a></li>
-        <li class="list-inline-item"><a href="#">Contact</a></li>
-        <li class="list-inline-item"><a href="#">About</a></li>
-      </ul>
-      <p class="copyright">SRV NSS VHSS © 2024</p>
+      <div></div>
+        <div class="social"><a href="https://www.facebook.com/SrvNssVhssChirikkadavu/"><i class="bi bi-facebook"></i></a><a href="https://www.instagram.com/srv_nss_vhss_chirakkadavu"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-linkedin"></i></a><a href="#"><i class="bi bi-youtube"></i></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Home</a></li>
+            <li class="list-inline-item"><a href="#">Register</a></li>
+            <li class="list-inline-item"><a href="#">Contact</a></li>
+            <li class="list-inline-item"><a href="#">About</a></li>
+            <li class="list-inline-item"><a href="#"></a></li>
+        </ul>
+        <p class="copyright">SRV NSS VHSS © 2024</p>
     </footer>
-  </div>
-  <!-- End Footer Section -->
-
-  <!-- Scripts -->
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  <!-- ============== End Footer Section ========== -->
+  <!--  JQuery file     -->
   <script src="js/jquery-3.6.1.min.js"></script>
+
+  <!-- bootstrap min js -->
   <script src="js/bootstrap.min.js"></script>
+
+  <!-- aos file    -->
   <script src="js/aos.js"></script>
+
+  <!-- gsap file    -->
   <script src="js/gsap.min.js"></script>
+
+  
+  <!-- particles js file  -->
   <script src="js/particles.min.js"></script>
+
+  <!--  Tilt.js file     -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+  <!--  main js file  -->
   <script src="js/main.js"></script>
+
 </body>
+
 </html>
