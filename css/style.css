@@ -86,6 +86,10 @@ body.home-rtl {
   color: var(--bodyColor);
   background-color: var(--brand-color);
 }
+.navbar-brand {
+  color: #ffffff;
+  }
+
 
 .title {
   color: var(--primaryColor);
