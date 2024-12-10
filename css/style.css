@@ -63,6 +63,21 @@ header {
   gap: 30px; /* Add space between the image and text */
 }
 
+.home-box1 {
+  display:table; /* Enable Flexbox */
+  flex-direction: row; /* Arrange items horizontally */
+  align-items: start; /* Center items vertically */
+  justify-content: flex-start; /* Align items to the start */
+  text-align: left; /* Align text to the left */
+  width: 100%; 
+  max-width: 800px; /* Prevent the box from becoming too wide */
+  padding: 20px;
+  background: #eff0ef;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  gap: 30px; /* Add space between the image and text */
+}
+
 /* Profile Image */
 .home-box img {
   width: 150px; /* Adjust the image size */
@@ -75,8 +90,19 @@ header {
 .home-content {
   flex: 1; /* Allow the content to take the remaining space */
 }
+.home-content1 {
+  flex: 1; /* Allow the content to take the remaining space */
+}
 
 .home-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #302e2e;
+  animation: glow 1.5s infinite alternate;
+}
+
+.home-content1 h1 {
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.2;
@@ -119,10 +145,19 @@ header {
     width: 95%;
     gap: 20px; /* Adjust the gap for medium screens */
   }
+  
+  .home-box1 {
+    width: 95%;
+    gap: 20px; /* Adjust the gap for medium screens */
+  }
 
   .home-content h1 {
     font-size: 2rem;
   }
+   
+  .home-content1 h1 {
+    font-size: 2rem;
+  }  
 
   .home-content p {
     font-size: 1rem;
@@ -143,15 +178,24 @@ header {
     padding: 15px;
     text-align: center; /* Center-align text on smaller screens */
   }
+  .home-box1 {
+    flex-direction: column;/* Stack image and content vertically */
+    width: 100%;
+    padding: 15px;
+    text-align: center; /* Center-align text on smaller screens */
+  }
 
   .home-img {
+    width: 120px;
+  }
+  .home-img1 {
     width: 120px;
   }
 
   .home-content h1 {
     font-size: 1.8rem;
   }
-
+  
   .home-content p {
     font-size: 1rem;
   }
@@ -227,8 +271,9 @@ img {
 @media (max-width: 768px) {
   /* Adjust non-hero images */
   .container img:not(.hero-img) {
-      width: 100%; /* Make images take full width */
+      max-width: 100%; /* Make images take full width */
       height: auto; /* Maintain aspect ratio */
+      margin-top: 15px;
       margin-bottom: 15px; /* Optional: Add some space below each image */
   }
 }
