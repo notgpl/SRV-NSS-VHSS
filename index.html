@@ -24,8 +24,10 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+
   <!-- Main CSS -->
   <link rel="stylesheet" href="css/style.css">
+
 
   <script>
     function animateTitle(textArray, interval) {
@@ -48,14 +50,14 @@
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
-        <a class="navbar-brand">SRV.NSS.VHSS</a>
+        <a class="navbar-brand">SRV.NSS.VHSS | News: Admission Started</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <i class="bi bi-list" id="menu"></i>
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-          <ul class="navbar-nav ms-auto" id="navbar">
+          <ul class="navbar-nav ms-auto" id="navbar" style="align-items: center;">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://portfolio.notgpl.live">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://notgpl.live">Portfolio</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
@@ -65,48 +67,84 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero d-flex flex-column justify-content-center align-items-center" id="hero">
-    <div id="particles-js"></div>
+<section class="home-slider owl-carousel" id="hero-carousel">
+  <div id="particles-js"></div>
+  <!-- Slider Item 1 -->
+  <div class="slider-item" style="background-image: url('images/srvnsshs.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-start">
+        <div class="col-md-6">
+          <h1 class="mb-4" data-aos="fade-right">SRV NSS VHSS Chirakkadavu</h1>
+          <div class="donk"  data-aos="fade-right" data-aos-delay="150">
+          <p1>Welcome to SRV NSS VHSS Chirakkadavu, a renowned institution dedicated to excellence in education and holistic development. We nurture young minds by fostering academic brilliance, creativity, and strong ethical values in a supportive and inspiring environment.</p1><br>
+          <a href="" class="btn" data-aos="fade-right" data-aos-delay="200">Contact Us</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  <!-- Why US ?-->
+  <section class="section why-us" data-section="section2">
     <div class="container">
       <div class="row">
-        <div class="hero-text col-12 col-lg-5">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="title" data-aos="fade-up" data-aos-delay="150">SRV.<span class="unique-text">NSS</span>.VHSS Chirakkadavu</h2>
-            </div>
-            <div class="col-lg-10 col-12" data-aos="fade-up" data-aos-delay="200">
-              <p>Building a foundation for lifelong success by providing quality education rooted in strong values and integrity. Our approach offers diverse opportunities to inspire growth, achievement, and a love for learning. We foster a supportive environment where curiosity thrives, empowering individuals to reach their fullest potential.</p>
-            </div>
-          </div>
         </div>
-        <div class="col-12 col-lg-7 mx-md-auto text-center" data-aos="fade-left" data-aos-delay="100">
-          <div class="hero-image">
-            <div class="hero-img" data-tilt>
-              <img class="img-fluid" alt="hero-img" src="srvnsshsimg.jpg">
-            </div>
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <div class="row justify-content-center">
+                  <div class="custom-text" data-aos="fade-right">
+                    <h1>Quality Education</h1>
+                    <p>We offer quality education that goes beyond textbooks, focusing on building strong academic foundations and life skills. Our programs are designed to inspire curiosity and promote holistic development in every student. With experienced educators and a supportive environment, we ensure your child receives the tools they need to achieve excellence.</p>
+                  </div>
+                </div>
+              </article>
+              &nbsp;
+              <article id='tabs-2'>
+                <div class="row justify-content-center">
+                <div class="custom-text" data-aos="fade-left">
+                    <h1>Certified Teachers</h1>
+                    <p>We have certified teachers dedicated to nurturing every student’s potential through their expertise and commitment. Our educators are skilled in modern teaching methods and bring passion to the classroom, ensuring an enriching experience. With their support and guidance, students excel academically and grow holistically to succeed in every aspect of life.</p>
+                  </div>
+                </div>
+              </article>
+              &nbsp;
+              <article id='tabs-3'>
+                <div class="row justify-content-center">
+                <div class="custom-text2" data-aos="fade-right">
+                    <h1>Book & Library</h1>
+                    <p>Our library offers a rich collection of books and resources, creating the perfect environment for students to learn and grow. From timeless classics and modern novels to essential educational materials, it caters to diverse interests. This inviting space inspires curiosity and fosters a love for lifelong learning, empowering students to achieve more.</p>
+                  </div>
+                </div>
+              </article>
+            </section>
           </div>
         </div>
       </div>
     </div>
   </section>
-
+  <!-- News Section-->
+  <section class="container services py-5" id="services">
+    <div class="heading">
+      <div class="row justify-content-center">
+      <div class="custom-text2">
+      <h2 class="title" data-aos="fade-up" data-aos-delay="100">Latest News</h2>
+      <p data-aos="fade-up" data-aos-delay="150">
+        Admissions for the upcoming academic year have begun! Take this opportunity to enroll and be part of a supportive community focused on empowering students for success and growth.
+      </p>
+    </div>
   <!-- About Section -->
   <section class="container services py-5" id="services">
     <div class="heading">
+      <div class="row justify-content-center">
+      <div class="custom-text2">
       <h2 class="title" data-aos="fade-up" data-aos-delay="100">About The School</h2>
-      <p class="col-lg-7 col-12" data-aos="fade-up" data-aos-delay="150">
+      <p data-aos="fade-up" data-aos-delay="150">
         S.R.V.N.S.S. V.H.S.S. (Sree Rama Vilasam Nair Service Society Vocational Higher Secondary School), established in 1957, is a prominent educational institution managed by the SRV NSS Karayogam No: 714 Group. Located in the serene rural area of Chirakkadavu in the Kottayam district of Kerala, the school operates under the Kanjirappally block. Our institution offers quality education for students from Grades 8 to 12, blending academic excellence with holistic development. With a rich legacy of dedication and commitment, the school has been a cornerstone in nurturing young minds.
       </p>
     </div>
-    <div class="home-1" data-aos="fade-left" data-aos-delay="100">
-      <div class="home-box1" style="margin-top: 20px; margin-bottom: 20px;">
-        <h5>Image</h5>
-      <div class="img">
-          <img class="img" alt="hero-img" src="srvnsshsimg2.jpg">
-        </div>
-      </div>
-    </div>
-  </div>
     <div class="row gy-4 gx-4">
       <div class="col-md-6 col-lg-4 mx-auto" data-aos="fade-down" data-aos-delay="300">
         <div class="box box-service box-hover">
@@ -145,31 +183,38 @@
       </div>
     </div>
   </div>
+    
   </section>
 
   <!-- Start Admission  Section-->
   <section class="container services py-5" id="services">
     <div class="heading">
-      <h2 class="title" data-aos="fade-up" data-aos-delay="100">Admission</h2>
-      <p class="col-lg-7 col-12" data-aos="fade-up" data-aos-delay="150">
-        For Admission and other enquries please visit the contact page.
+      <div class="row justify-content-center">
+      <h2 class="title" data-aos="fade-up" data-aos-delay="100">Admission & Other Enquires</h2>
+      <div class="row justify-content-center">
+      <p class="custom-text2" data-aos="fade-up" data-aos-delay="150">
+        Admissions for the upcoming academic year are now open at our school. For more information or to begin the enrollment process, please contact us via our contact page or reach out directly through email or phone. Whether you have questions about admission, academic programs, or general inquiries, our team is ready to assist you. Feel free to get in touch, and we'll provide the support you need to make informed decisions about your child's future.
         </p>
         <div class="btun" data-aos="fade-up" data-aos-delay="100">
-        <a class="btn" href="contact.html" >Contact</a>
+        <a class="btn" href="contact.html" >Contact For More</a>
+        </div>
+        </div>
         </div>
         </div>
         </section>
   <!-- Start Portfolio Section -->
   <section class="container services py-5" id="services">
     <div class="heading">
-      <h2 class="title" data-aos="fade-up" data-aos-delay="100">Portfolio </h2>
-      <p data-aos="fade-up" data-aos-delay="100">Our Portfolio :</p>
+      <div class="row justify-content-center">
+        <div class="custom-text2">
+      <h2 class="title" data-aos="fade-up" data-aos-delay="100">Our Portfolio </h2>
+      <p data-aos="fade-up" data-aos-delay="100">Hello, I'm NotGpl, a passionate frontend developer with a keen eye for detail and a love for creating beautiful, user-friendly websites. With experience in HTML, CSS, JavaScript, and various frontend frameworks, I specialize in crafting seamless, responsive designs that enhance user experience. I strive to build websites that are not only functional but also visually appealing, ensuring they meet the needs of both the user and the client. Feel free to explore my portfolio and contact me for any inquiries or collaborations.</p>
       </div>
           <!-- Box -->
           <div class="home-box" data-aos="fade-up">
           <!-- Profile Image -->
           <div class="home-img">
-              <img src="notgpl.red.jpg" alt="Profile Image">
+              <img src="images/notgpl.red.jpg" alt="Profile Image">
           </div>
           <!-- Main Content -->
               <div class="home-content">
@@ -188,9 +233,13 @@
   <!-- Start Contact Section -->
   <section class="container services py-5" id="services">
     <div class="heading">
-      <h2 class="title" data-aos="fade-up" data-aos-delay="100">Contact</h2>
-      <p data-aos="fade-up" data-aos-delay="100">Contact Info:</p>
+      <div class="row justify-content-center">
+        <div class="custom-text2">
+      <h2 class="title" data-aos="fade-up" data-aos-delay="100">Have Questions? Contact Us</h2>
+      <p data-aos="fade-up" data-aos-delay="100">Feel free to reach out to us for any inquiries or assistance; we're here to help with all your needs. Whether you have a question or need more information, our team is ready to provide the support you deserve.</p>
       </div>
+      <div class="row justify-content-center">
+        <div class="custom-text2">
       <div class="info d-flex my-4 " data-aos="fade-up" data-aos-delay="250">
         <h5><i class="bi bi-envelope-fill mx-4"></i>example@gmail.com</h5>
       </div>
@@ -200,13 +249,7 @@
       <div class="info d-flex my-4 "data-aos="fade-up" data-aos-delay="350">
         <h5><i class="bi bi-geo-alt-fill mx-4"></i>Chirakkadavu, Kerala, India</h5>
       </div>
-      <div class="info d-flex my-4" data-aos="fade-up" data-aos-delay="350">
-        <p>Dev-Website</p>
         </div>
-        <div class="info d-flex my-4 " data-aos="fade-up" data-aos-delay="400">
-          <a class="btn" href="https://notgpl.live">NotGpl.live</a>
-          </div>
-          </div>
           <iframe class="contact-map" data-aos="fade-up" data-aos-delay="450"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.6685720384958!2d76.75896693435884!3d9.537495969720828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06369376793535%3A0x9326f884edff4249!2sSRV%20NSS%20Higher%20Secondary!5e0!3m2!1sen!2sus!4v1733665007576!5m2!1sen!2sus"
           allowfullscreen=""></iframe>
@@ -232,13 +275,20 @@
   </div>
 
   <!-- JS Scripts -->
-  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="jquery/jquery-3.6.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/gsap.min.js"></script>
-  <script src="js/particles.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="jquery/jquery.min.js"></script>
+
+    <!-- particles js file  -->
+    <script src="js/particles.min.js"></script>
+
+
+
+
 </body>
 
 </html>
