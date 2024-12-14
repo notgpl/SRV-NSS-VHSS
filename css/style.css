@@ -21,6 +21,86 @@
   /* border radius */
   --border-radius: 5px;
 }
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Home Slider Styles */
+.home-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-item {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensure content stays within bounds */
+}
+
+.slider-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(12, 12, 12, 0.411); /* Adjusted opacity to 50% */
+  z-index: 1; /* Ensure it sits above the background but below the text */
+}
+
+.container {
+  position: relative;
+  z-index: 2; /* Keep text above the overlay */
+}
+
+
+.slider-text {
+  color: #fff;
+  text-align: left;
+}
+
+.slider-text h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.slider-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slider-text h1 {
+    font-size: 60px;
+  }
+
+  .slider-text p {
+    font-size: 20px;
+  }
+}
+
 body {
   color: white;
   background-size: cover; 
@@ -29,7 +109,7 @@ body {
   font-family: 'Outfit';
   color: var(--primaryColor);
   background-color: var(--bodyColor);
-  text-align: left;
+  text-align: center;
   position: relative;
   overflow-x: hidden;
 
@@ -38,14 +118,29 @@ body {
 /* Start Header Style */
 header {
   color: rgb(44, 41, 41);
-  padding: 40px;
+  padding: 34px;
   position: fixed;
   top: 0px;
   width: 100%;
   z-index: 1000;
-  background-color: transparent ;
+  background-color: var(--boxColor) ;
   box-shadow: none;
 }
+
+
+/* Adding the overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  z-index: -2; /* Ensures it stays behind the content */
+}
+
+
 
 /* Box Styles */
 .home-box {
@@ -64,10 +159,10 @@ header {
 }
 
 .home-box1 {
-  display:table; /* Enable Flexbox */
+  display: flex; /* Correct 'display' for flexbox */
   flex-direction: row; /* Arrange items horizontally */
-  align-items: start; /* Center items vertically */
-  justify-content: flex-start; /* Align items to the start */
+  align-items: start; /* Align items to the start vertically */
+  justify-content: flex-start; /* Align items to the start horizontally */
   text-align: left; /* Align text to the left */
   width: 100%; 
   max-width: 800px; /* Prevent the box from becoming too wide */
@@ -76,7 +171,14 @@ header {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   gap: 30px; /* Add space between the image and text */
+  z-index: 1; /* Set a positive z-index */
 }
+
+.dropdown-menu {
+  position: absolute; /* Ensure the dropdown appears above other elements */
+  z-index: 1050; /* Higher z-index to appear above other content */
+}
+
 
 /* Profile Image */
 .home-box img {
@@ -115,6 +217,31 @@ header {
   font-size: 1.2rem;
   color: #666;
 }
+
+/* Why Choosing Us */
+
+section.why-us {
+  background-image: url(../images/choosing-bg.jpg);
+  background-color: var(--boxColor);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.tabs-content {
+  margin-top: 60px;
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+
+.tabs-content {
+    text-align: center;
+}
+
+}
+
 
 /* Social Icons */
 .social-icons {
@@ -213,6 +340,7 @@ header {
 
 body {
   padding-top: 18px;
+  text-align: center;
 }
 /* End Header Style */
 html {
@@ -262,6 +390,9 @@ body.home-rtl {
 img {
   max-width: 100%;
   height: auto;
+  z-index: 1; /* Set a low z-index for the image */
+  position: relative; /* Ensure proper layering */
+  
 }
 .hero-img {
   padding-top: -50px;
@@ -338,7 +469,6 @@ a:focus {
   border: 2px solid transparent;
   transition: 0.3s ease;
   cursor: pointer;
-  box-shadow: 0 0 8px #ffffff;
 }
 
 .btn:hover {
@@ -378,6 +508,28 @@ p {
   font-weight: 400;
 }
 
+h7 {
+  color: white;
+  font-size: 35px;
+  font-weight: bolder;
+  margin-top: 15px;
+  text-align: center;
+}
+
+h6 {
+  color: white;
+  font-size: 28px;
+  font-weight: bolder;
+  text-align: center;
+}
+p1 {
+  color: white;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  text-align: center;
+  width: 20%;
+}
 ul {
   list-style: none;
 }
@@ -386,7 +538,29 @@ img {
   width: 100%;
 }
 
+.custom-text {
+  text-align: center; /* Center the text */
+  width: 100%; /* Full width by default */
+}
 
+/* On desktop, reduce the width */
+@media (min-width: 768px) {
+  .custom-text {
+    width: 76%; /* Adjust the width to 60% on larger screens */
+  }
+}
+
+.custom-text2 {
+  text-align: center; /* Center the text */
+  width: 100%; /* Full width by default */
+}
+
+/* On desktop, reduce the width */
+@media (min-width: 768px) {
+  .custom-text2 {
+    width: 80%; /* Adjust the width to 60% on larger screens */
+  }
+}
 /* end global classes */
 
 /*================== start navbar section ==================*/
