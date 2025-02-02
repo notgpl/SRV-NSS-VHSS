@@ -70,7 +70,7 @@
 }
 
 .slider-text p {
-  font-size: 20px;
+  font-size: 25px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -356,7 +356,7 @@ body.home-rtl {
 
 .title {
   color: var(--primaryColor);
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bold;
   position: relative;
 }
@@ -482,7 +482,7 @@ a:focus {
   }
 
   .title {
-    font-size: 30px;
+    font-size: 32px;
   }
 
   .title-2 {
@@ -501,14 +501,14 @@ a:focus {
 
 p {
   color: var(--secendaryColor);
-  font-size: 18px;
+  font-size: 20px;
   line-height: 32px;
   font-weight: 400;
 }
 
 h7 {
   color: rgb(226, 158, 10);
-  font-size: 35px;
+  font-size: 38px;
   font-weight: bolder;
   margin-top: 15px;
   text-align: center;
@@ -516,7 +516,7 @@ h7 {
 
 h8 {
   color: rgb(0, 0, 0);
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bolder;
   margin-top: 15px;
   text-align: center;
@@ -530,7 +530,7 @@ h9 {
 }
 h10 {
   color: rgb(255, 255, 255);
-  font-size: 22px;
+  font-size: 25px;
   font-weight: bolder;
   margin-top: 15px;
   text-align: center;
@@ -544,7 +544,7 @@ h6 {
 }
 p1 {
   color: white;
-  font-size: 19px;
+  font-size: 20px;
   line-height: 32px;
   font-weight: 400;
   text-align: center;
