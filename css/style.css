@@ -170,14 +170,6 @@ header {
 }
 
 
-/* Profile Image */
-.home-box img {
-  width: 150px; /* Adjust the image size */
-  height: 150px; /* Ensure the image is square */
-  border-radius: 50%; /* Make the image circular */
-  object-fit: cover; /* Crop image to fit */
-}
-
 /* Content */
 .home-content {
   flex: 1; /* Allow the content to take the remaining space */
@@ -217,29 +209,6 @@ header {
     text-shadow: 0 0 3px #eceaea, 0 0 5px #f3ecec, 0 0 10px #e0d2d2;
     animation: glow 1.5s infinite alternate;
 }
-
-/* Glowing Text */
-
-/* Glowing Text with blue glow */
-span {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: 3.5rem;
-    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px , 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff;
-    animation: glow 1.5s infinite alternate;
-    position: relative; /* Needed for particles */
-}
-
-/* Glow Animation */
-@keyframes glow {
-    from {
-        text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px 
-    }
-    to {
-        text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px
-    }
-}
-
 
 .home-content p {
     font-size: 1.6rem;
