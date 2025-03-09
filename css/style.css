@@ -133,21 +133,6 @@ header {
 
 
 /* Box Styles */
-.home-box {
-  display: flex; /* Enable Flexbox */
-  flex-direction: row; /* Arrange items horizontally */
-  align-items: center; /* Center items vertically */
-  justify-content: flex-start; /* Align items to the start */
-  text-align: left; /* Align text to the left */
-  width: 60%; 
-  max-width: 800px; /* Prevent the box from becoming too wide */
-  padding: 20px;
-  background: #eff0ef;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  gap: 30px; /* Add space between the image and text */
-}
-
 .home-box1 {
   display: flex; /* Correct 'display' for flexbox */
   flex-direction: row; /* Arrange items horizontally */
