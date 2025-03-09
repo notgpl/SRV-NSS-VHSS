@@ -151,9 +151,9 @@ header {
 .home-box1 {
   display: flex; /* Correct 'display' for flexbox */
   flex-direction: row; /* Arrange items horizontally */
-  align-items: start; /* Align items to the start vertically */
+  align-items: center; /* Align items to the start vertically */
   justify-content: flex-start; /* Align items to the start horizontally */
-  text-align: left; /* Align text to the left */
+  text-align: center; /* Align text to the left */
   width: 99%; 
   max-width: 999px; /* Prevent the box from becoming too wide */
   padding: 20px;
