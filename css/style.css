@@ -183,7 +183,7 @@ header {
     font-size: 2.5rem;
     font-weight: bold;
     line-height: 1.5;
-    color: #efefef;
+    color: #5e5e5e;
 }
 
 .home-content p {
@@ -258,8 +258,8 @@ section.why-us {
     border-radius: 50%;
     margin: 1rem 0.5rem;
     transition: 0.3s ease-in-out;
-    color: #ffffff;
-    text-shadow: 0 0 7px #ffffff;
+    color: #000000;
+    text-shadow: 0 0 7px #000000;
 }
 
 .social-icons a:hover {
