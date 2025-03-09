@@ -601,10 +601,7 @@ img {
     section.home {
         
     }
-    .home-img img {
-        width: 110px;
-        height: 110px;
-    }
+    
 
     .home-box {
         width: 98%; /* Adjust box width */
