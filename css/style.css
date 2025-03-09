@@ -178,15 +178,12 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-
 /* Content inside the Box */
 .home-content h1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: bold;
     line-height: 1.5;
-    color: #5e5e5e;
-    text-shadow: 0 0 3px #eceaea, 0 0 5px #f3ecec, 0 0 10px #e0d2d2;
-    animation: glow 1.5s infinite alternate;
+    color: #efefef;
 }
 
 .home-content p {
