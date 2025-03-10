@@ -180,18 +180,12 @@ header {
 
 /* Content inside the Box */
 .home-content h1 {
-    font-size: 2.8rem;
+    font-size: 2.1rem;
     font-weight: bold;
     line-height: 1.5;
     color: #5e5e5e;
 }
 
-.home-content p {
-    font-size: 1.9rem;
-    color: #ffffff;
-    text-shadow: 0 0 10px #ffffff;
-    margin: 1rem 0;
-}
 
 /* Image Styles */
 .home-img img {
@@ -199,8 +193,7 @@ header {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 0px;
-    transition: 0.3s ease;
-    
+
   }
 .home-content1 h1 {
   font-size: 2.8rem;
@@ -212,7 +205,7 @@ header {
 
 .home-content p {
   margin-top: 0.5rem;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   color: #666;
 }
 
@@ -259,16 +252,6 @@ section.why-us {
   color: #000000;
 }
 
-/* Responsive Design */
-@media (max-width: 465px) {
-  .home-box {
-    width: 95%;
-  }
-  .home-box1 {
-    width: 95%;
-  }
-  
-}
 @media (max-width: 995px) {
   .home-box {
     width: 95%;
@@ -303,7 +286,7 @@ section.why-us {
 @media (max-width: 768px) {
   .home-box {
     flex-direction: row;/* Stack image and content vertically */
-    width: 95%;
+    width: 90%;
     padding: 15px;
     text-align: center; /* Center-align text on smaller screens */
   }
@@ -519,7 +502,7 @@ h7 {
 }
 
 h8 {
-  color: rgb(226, 158, 10);
+  color: rgb(0, 0, 0);
   font-size: 26px;
   font-weight: bolder;
   justify-content: center;
@@ -594,7 +577,7 @@ img {
     
 
     .home-box {
-        width: 95%; /* Adjust box width */
+        width: 90%; /* Adjust box width */
     }
     
     .home-content h1 {
