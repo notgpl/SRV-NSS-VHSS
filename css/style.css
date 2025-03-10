@@ -268,6 +268,11 @@ section.why-us {
   .home-box1 {
     width: 95%;
   }
+  .social-icons a {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin: 0.5rem;
+  }
 }
 @media (max-width: 995px) {
   .home-box {
@@ -289,8 +294,8 @@ section.why-us {
   }
 
   .social-icons a {
-        width: 1.2rem;
-        height: 1.2rem;
+        width: 1rem;
+        height: 1rem;
         margin: 0.5rem;
   }
  .home-content1 h8 {
@@ -330,8 +335,8 @@ section.why-us {
 
   .social-icons a {
     
-    height: 1.2rem;
-    width: 1.2rem;
+    height: 1rem;
+    width: 1rem;
     margin: 0.5rem;
     margin-top: -120px;
   }
@@ -593,7 +598,7 @@ img {
     
 
     .home-box {
-        width: 98%; /* Adjust box width */
+        width: 95%; /* Adjust box width */
     }
     
     .home-content h1 {
