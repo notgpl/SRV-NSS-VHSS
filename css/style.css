@@ -595,11 +595,7 @@ img {
     .home-box {
         width: 98%; /* Adjust box width */
     }
-    .social-icons a {
-        width: 2.9rem;
-        height: 2.9rem;
-        margin: 0.2rem;
-    }
+    
     .home-content h1 {
         font-size: 1.8rem;
     }
