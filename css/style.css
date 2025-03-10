@@ -180,7 +180,7 @@ header {
 
 /* Content inside the Box */
 .home-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: bold;
     line-height: 1.5;
     color: #5e5e5e;
@@ -203,7 +203,7 @@ header {
     
   }
 .home-content1 h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: bold;
   line-height: 1.2;
   color: #302e2e;
@@ -281,7 +281,7 @@ section.why-us {
   }
    
   .home-content1 h1 {
-    font-size: 2rem;
+    font-size: 1rem;
   }  
 
   .home-content p {
@@ -322,7 +322,7 @@ section.why-us {
   }
 
   .home-content h1 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
   
   .home-content p {
